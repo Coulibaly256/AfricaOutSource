@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+header {
+    display: flex; /* Active Flexbox */
+    justify-content: space-between; /* Répartit l’espace entre le logo et la navigation */
+    align-items: center; /* Centre verticalement */
+    height: 40px; /* Réduit la hauteur du header */
+    padding: 5px 10px; /* Ajoute un peu d'espace autour */
+    background: #333;
+    color: white;
+    padding: 15px 0;
+
+}
+
+.logo img
+{
+    width: 60px; /* Réduit la taille */
+    height: 60px; /* Assure un cercle parfait */
+    border-radius: 50%; /* Rend l'image circulaire */
+    margin: 15px;
+}
+
+nav ul {
+
+    list-style: none;/* Supprime les puces */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Met les liens en ligne */
+    gap: 20px; /* Espacement entre les liens */
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#hero {
+    position: relative;
+    background: url("images/collegue.jpg") no-repeat center center;
+    background-size: cover; /* Ajuste l'image pour couvrir toute la section */
+    color: white;
+    padding: 50px 20px;
+    height: 500px; /* Ajuste la hauteur selon ton besoin */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centre le contenu */
+    text-align: center; /* Centre le texte */
+    font-size: 30px;
+}
+
+/* Ajoute un overlay semi-transparent */
+#hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);/* Noir avec 50% de transparence */
+}
+
+/* Pour s'assurer que le texte reste visible */
+#hero * {
+    position: relative;
+    z-index: 1;
+}
+
+.cta {
+    display: inline-block;
+    background: #ff9800;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.feature-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.feature-item {
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background: #333;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
